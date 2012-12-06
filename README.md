@@ -1,5 +1,7 @@
 # Welcome To MachInjectSample
 
+**This project has been merged into the [mach_inject](https://github.com/rentzsch/mach_inject) repo.**
+
 MachInjectSample demonstrate the use of mach inject with the new SMJobBless API. By creating a privileged helper tool with the SMJobBless API, we can avoid asking an admin password each time we need to inject code into a process.
 
 ## Description of contents
