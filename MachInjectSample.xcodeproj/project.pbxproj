@@ -568,7 +568,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -592,7 +592,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -601,13 +601,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Mac Developer: Erwan Barrier (JVRT6RS6G3)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MachInjectSample/MachInjectSample-Prefix.pch";
 				INFOPLIST_FILE = "MachInjectSample/MachInjectSample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "BBEF9FF1-4330-465A-B9AD-A7954697325F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -616,13 +617,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Mac Developer: Erwan Barrier (JVRT6RS6G3)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MachInjectSample/MachInjectSample-Prefix.pch";
 				INFOPLIST_FILE = "MachInjectSample/MachInjectSample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "BBEF9FF1-4330-465A-B9AD-A7954697325F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -631,7 +633,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Mac Developer: Erwan Barrier (JVRT6RS6G3)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Installer/Installer-Prefix.pch";
 				INFOPLIST_FILE = "Installer/Installer-Info.plist";
@@ -647,7 +649,7 @@
 					"Installer/Installer-Launchd.plist",
 				);
 				PRODUCT_NAME = com.erwanb.MachInjectSample.Installer;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "BBEF9FF1-4330-465A-B9AD-A7954697325F";
 			};
 			name = Debug;
 		};
@@ -655,7 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Mac Developer: Erwan Barrier (JVRT6RS6G3)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Installer/Installer-Prefix.pch";
 				INFOPLIST_FILE = "Installer/Installer-Info.plist";
@@ -671,7 +673,7 @@
 					"Installer/Installer-Launchd.plist",
 				);
 				PRODUCT_NAME = com.erwanb.MachInjectSample.Installer;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "BBEF9FF1-4330-465A-B9AD-A7954697325F";
 			};
 			name = Release;
 		};
@@ -680,7 +682,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "Mac Developer: Erwan Barrier (JVRT6RS6G3)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Injector/Injector-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/mach_inject/mach_inject_bundle\"";
@@ -697,7 +699,7 @@
 					"Injector/Injector-Launchd.plist",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "BBEF9FF1-4330-465A-B9AD-A7954697325F";
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
@@ -707,7 +709,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "Mac Developer: Erwan Barrier (JVRT6RS6G3)";
+				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Injector/Injector-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/mach_inject/mach_inject_bundle\"";
@@ -724,7 +726,7 @@
 					"Injector/Injector-Launchd.plist",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "BBEF9FF1-4330-465A-B9AD-A7954697325F";
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
