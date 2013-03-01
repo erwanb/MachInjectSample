@@ -6,7 +6,7 @@
 	<string>com.erwanb.MachInjectSample.Injector</string>
 	<key>MachServices</key>
 	<dict>
-		<key>com.erwanb.MachInjectSample.Injector.mach</key>
+		<key>com.erwanb.MachInjectSample.Injector</key>
 		<true/>
 	</dict>
 </dict>

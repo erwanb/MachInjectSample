@@ -6,7 +6,7 @@
 	<string>com.erwanb.MachInjectSample.Installer</string>
 	<key>MachServices</key>
 	<dict>
-		<key>com.erwanb.MachInjectSample.Installer.mach</key>
+		<key>com.erwanb.MachInjectSample.Installer</key>
 		<true/>
 	</dict>
 </dict>

@@ -12,7 +12,8 @@
 	<string>0.1</string>
 	<key>SMAuthorizedClients</key>
 	<array>
-		<string>identifier com.erwanb.MachInjectSample</string>
+		<string>identifier com.erwanb.MachInjectSample and certificate leaf[subject.CN] = &quot;Mac Developer: Rudy Aramayo (R2287HQBC8)&quot;</string>
+		<string>identifier com.erwanb.MachInjectSample and certificate leaf[subject.CN] = &quot;Mac Developer: Rudy Aramayo (R2287HQBC8) Development&quot;</string>
 	</array>
 </dict>
 </plist>
