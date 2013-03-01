@@ -63,37 +63,6 @@
         [self appendLog:[NSString stringWithFormat:@"Received response: %s.", response]];
     });
     return YES;
-    
-//    
-//    
-//    
-//  NSConnection *c = [NSConnection connectionWithRegisteredName:@"com.erwanb.MachInjectSample.Injector.mach" host:nil];
-//  assert(c != nil);
-//
-//  DKInjector *injector = (DKInjector *)[c rootProxy];
-//  assert(injector != nil);
-//
-//  pid_t pid = [[[NSRunningApplication runningApplicationsWithBundleIdentifier:@"com.apple.finder"]
-//                lastObject] processIdentifier];
-//  
-//  NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Payload" ofType:@"bundle"];
-//
-//  NSLog(@"Injecting Finder (%@) with %@", [NSNumber numberWithInt:pid], bundlePath);
-//
-//  mach_error_t err = [injector inject:pid withBundle:[bundlePath fileSystemRepresentation]];
-//
-//  if (err == 0) {
-//    NSLog(@"Injected Finder");
-//    return YES;
-//  } else {
-//    NSLog(@"an error occurred while injecting Finder: %@ (error code: %@)", [NSString stringWithCString:mach_error_string(err) encoding:NSASCIIStringEncoding], [NSNumber numberWithInt:err]);
-//
-//    *error = [[NSError alloc] initWithDomain:DKErrorDomain
-//                                        code:DKErrInjection
-//                                    userInfo:@{NSLocalizedDescriptionKey: DKErrInjectionDescription}];
-//
-//    return NO;
-//  }
 }
 
 @end

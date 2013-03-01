@@ -19,7 +19,7 @@
   NSError *error;
   
   // Install helper tools
-  if (//[DKInstaller isInstalled] == NO &&
+  if ([DKInstaller isInstalled] == NO &&
       [DKInstaller install:&error] == NO)
   {
     assert(error != nil);

@@ -165,30 +165,6 @@ NSString *const DKInstallerExecutablLabel = @"com.erwanb.MachInjectSample.Instal
     
     return YES;
     
-    /*
-  NSString *frameworkPath = [[NSBundle mainBundle] pathForResource:@"mach_inject_bundle" ofType:@"framework"];
-  BOOL result = YES;
-
-  NSConnection *c = [NSConnection connectionWithRegisteredName:@"com.erwanb.MachInjectSample.Installer.mach" host:nil];
-  assert(c != nil);
-
-  DKFrameworkInstaller *installer = (DKFrameworkInstaller *)[c rootProxy];
-  assert(installer != nil);
-
-  result = [installer installFramework:frameworkPath];
-
-  if (result == YES) {
-    NSLog(@"Installed mach_inject_bundle.framework successfully");
-  } else {
-    NSLog(@"an error occurred while installing mach_inject_bundle.framework (domain: %@ code: %@)", installer.error.domain, [NSNumber numberWithInteger:installer.error.code]);
-
-    *error = [[NSError alloc] initWithDomain:DKErrorDomain
-                                        code:DKErrInstallFramework
-                                    userInfo:@{NSLocalizedDescriptionKey: DKErrInstallDescription}];
-  }
-     
-  return result;
-     */
 }
 
 @end
