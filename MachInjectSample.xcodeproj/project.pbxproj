@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA62A5D116E162F30057364E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE0FD166DF941009758CC /* AppKit.framework */; };
 		F0ADE0FB166DF941009758CC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ADE0FA166DF941009758CC /* Cocoa.framework */; };
 		F0ADE105166DF941009758CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0ADE103166DF941009758CC /* InfoPlist.strings */; };
 		F0ADE107166DF941009758CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE106166DF941009758CC /* main.m */; };
@@ -180,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA62A5D116E162F30057364E /* AppKit.framework in Frameworks */,
 				F0ADE1CA166E0992009758CC /* Carbon.framework in Frameworks */,
 				F0ADE1C8166E0987009758CC /* mach_inject_bundle.framework in Frameworks */,
 				F0ADE1BA166E0820009758CC /* Foundation.framework in Frameworks */,
@@ -202,8 +204,8 @@
 			children = (
 				F0ADE1A2166E078E009758CC /* mach_inject_bundle.xcodeproj */,
 				F0ADE100166DF941009758CC /* MachInjectSample */,
-				F0ADE129166DF9FB009758CC /* Injector */,
 				F0ADE130166DF9FB009758CC /* Installer */,
+				F0ADE129166DF9FB009758CC /* Injector */,
 				F0ADE137166DF9FB009758CC /* Payload */,
 				F0ADE0F9166DF941009758CC /* Frameworks */,
 				F0ADE0F7166DF941009758CC /* Products */,
@@ -288,12 +290,12 @@
 		F0ADE130166DF9FB009758CC /* Installer */ = {
 			isa = PBXGroup;
 			children = (
+				F0ADE136166DF9FB009758CC /* main.m */,
 				F0ADE131166DF9FB009758CC /* DKFrameworkInstaller.h */,
 				F0ADE132166DF9FB009758CC /* DKFrameworkInstaller.m */,
 				F0ADE133166DF9FB009758CC /* Installer-Info.plist */,
 				F0ADE134166DF9FB009758CC /* Installer-Launchd.plist */,
 				F0ADE135166DF9FB009758CC /* Installer-Prefix.pch */,
-				F0ADE136166DF9FB009758CC /* main.m */,
 			);
 			path = Installer;
 			sourceTree = "<group>";
@@ -600,7 +602,7 @@
 		F0ADE115166DF942009758CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -616,7 +618,7 @@
 		F0ADE116166DF942009758CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -632,7 +634,7 @@
 		F0ADE15B166DFB8B009758CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Installer/Installer-Prefix.pch";
@@ -656,7 +658,7 @@
 		F0ADE15C166DFB8B009758CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Installer/Installer-Prefix.pch";
@@ -680,7 +682,7 @@
 		F0ADE1C3166E0821009758CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -707,7 +709,7 @@
 		F0ADE1C4166E0821009758CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer: Rudy Aramayo (R2287HQBC8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

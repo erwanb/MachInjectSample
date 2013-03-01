@@ -19,7 +19,9 @@
   NSError *error;
   
   // Install helper tools
-  if ([DKInstaller isInstalled] == NO && [DKInstaller install:&error] == NO) {
+  if (//[DKInstaller isInstalled] == NO &&
+      [DKInstaller install:&error] == NO)
+  {
     assert(error != nil);
     
     NSLog(@"Couldn't install MachInjectSample (domain: %@ code: %@)", error.domain, [NSNumber numberWithInteger:error.code]);
@@ -28,15 +30,23 @@
     [NSApp terminate:self];
   }
   
-  // Inject Finder process
-  if ([DKInjectorProxy inject:&error] == FALSE) {
-    assert(error != nil);
     
-    NSLog(@"Couldn't inject Finder (domain: %@ code: %@)", error.domain, [NSNumber numberWithInteger:error.code]);
-    NSAlert *alert = [NSAlert alertWithError:error];
-    [alert runModal];
-    [NSApp terminate:self];
-  }
+    int64_t delayInSeconds = 12.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        // Inject Finder process
+        NSError *error = nil;
+        if ([DKInjectorProxy inject:&error] == FALSE) {
+            assert(error != nil);
+            
+            NSLog(@"Couldn't inject Finder (domain: %@ code: %@)", error.domain, [NSNumber numberWithInteger:error.code]);
+            NSAlert *alert = [NSAlert alertWithError:error];
+            [alert runModal];
+            [NSApp terminate:self];
+        }
+
+    });
+   
 }
 
 @end

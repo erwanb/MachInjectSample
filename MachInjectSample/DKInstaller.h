@@ -12,7 +12,8 @@ FOUNDATION_EXPORT NSString *const DKInjectorExecutablLabel;
 FOUNDATION_EXPORT NSString *const DKInstallerExecutablLabel;
 
 @interface DKInstaller : NSObject
-
+{
+}
 + (BOOL)isInstalled;
 + (BOOL)install:(NSError **)error;
 
